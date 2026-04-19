@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Square Mini System</title>
+  <link rel="stylesheet" href="./styles/base.css" />
+  <link rel="stylesheet" href="./styles/app.css" />
+</head>
+<body>
+  <div class="shell" id="app">
+    <section class="hero">
+      <div class="hero-top">
+        <div>
+          <p class="eyebrow" data-i18n="heroEyebrow">The Square</p>
+          <h1 id="hero-title">Carregando conceito...</h1>
+        </div>
+        <div class="locale-switcher">
+          <label for="locale-select" data-i18n="languageLabel">Idioma</label>
+          <select id="locale-select" data-action="select-locale">
+            <option value="pt-BR">pt-BR</option>
+            <option value="en-US">English (US)</option>
+          </select>
+        </div>
+      </div>
+      <p id="hero-summary">
+        Este mini sistema mantem regras e interface separadas. A camada de sistema gerencia declaracoes, intencoes, peso e planejamento. A interface apenas emite eventos e renderiza estado.
+      </p>
+    </section>
+
+    <div class="grid">
+      <div class="stack">
+        <section class="panel">
+          <div class="panel-header">
+            <div>
+              <h2 data-i18n="dashboardTitle">Painel</h2>
+              <p data-i18n="dashboardDescription">Escolha uma pessoa e acompanhe peso, reputacao e trabalho ativo.</p>
+            </div>
+          </div>
+          <div id="dashboard"></div>
+        </section>
+
+        <section class="panel">
+          <div class="panel-header">
+            <div>
+              <h2 data-i18n="createDeclarationTitle">Criar Declaracao</h2>
+              <p data-i18n="createDeclarationDescription">Rascunhe uma necessidade e comprometa peso quando estiver pronto.</p>
+            </div>
+          </div>
+          <div id="declaration-form"></div>
+        </section>
+
+        <section class="panel">
+          <div class="panel-header">
+            <div>
+              <h2 data-i18n="myDeclarationsTitle">Minhas Declaracoes</h2>
+              <p data-i18n="myDeclarationsDescription">Gerencie suas prioridades, compromissos e resolucoes aceitas.</p>
+            </div>
+          </div>
+          <div id="my-declarations"></div>
+        </section>
+      </div>
+
+      <div class="stack">
+        <section class="panel">
+          <div class="panel-header">
+            <div>
+              <h2 data-i18n="boardTitle">Quadro De Declaracoes</h2>
+              <p data-i18n="boardDescription">Declaracoes comprometidas disponiveis para resolucao.</p>
+            </div>
+          </div>
+          <div id="board"></div>
+        </section>
+
+        <section class="panel">
+          <div class="panel-header">
+            <div>
+              <h2 data-i18n="planTitle">Plano De Aquisicao</h2>
+              <p data-i18n="planDescription">Ordene o que deve ser liberado primeiro conforme o peso volta para voce.</p>
+            </div>
+          </div>
+          <div id="plan"></div>
+        </section>
+
+        <section class="panel">
+          <div class="panel-header">
+            <div>
+              <h2 data-i18n="activityTitle">Atividade</h2>
+              <p data-i18n="activityDescription">Eventos, transferencias e mudancas do sistema ao longo do tempo.</p>
+            </div>
+          </div>
+          <div id="activity"></div>
+        </section>
+      </div>
+    </div>
+  </div>
+  <script id="embedded-readme-meta" type="application/json">
+    {
+      "pt-BR": {
+        "title": "The Square",
+        "summary": "Teste conceitual de um pequeno sistema web orientado a eventos para declaracoes, resolucoes, peso e planejamento."
+      },
+      "en-US": {
+        "title": "The Square",
+        "summary": "Concept test for a small event-driven web system for declarations, resolutions, weight, and planning."
+      }
+    }
+  </script>
+  <script id="embedded-mock-state" type="application/json">
+    {
+      "currentUserId": "user-1",
+      "locale": "pt-BR",
+      "users": [
+        { "id": "user-1", "name": "Ari", "availableWeight": 12, "lockedWeight": 0, "reputation": 3 },
+        { "id": "user-2", "name": "Bea", "availableWeight": 8, "lockedWeight": 0, "reputation": 5 },
+        { "id": "user-3", "name": "Caio", "availableWeight": 10, "lockedWeight": 0, "reputation": 2 }
+      ],
+      "declarations": [
+        {
+          "id": "dec-1",
+          "ownerId": "user-2",
+          "title": "Landing page copy review",
+          "description": "Need a sharper headline and a cleaner first screen.",
+          "requestedWeight": 3,
+          "committedWeight": 3,
+          "status": "committed",
+          "acceptedIntentId": null,
+          "createdAt": "2026-04-13T11:00:00.000Z"
+        },
+        {
+          "id": "dec-2",
+          "ownerId": "user-1",
+          "title": "Logo sketch cleanup",
+          "description": "Turn rough shapes into a cleaner mark I can keep iterating on.",
+          "requestedWeight": 4,
+          "committedWeight": 4,
+          "status": "committed",
+          "acceptedIntentId": null,
+          "createdAt": "2026-04-13T11:10:00.000Z"
+        },
+        {
+          "id": "dec-3",
+          "ownerId": "user-3",
+          "title": "Simple spreadsheet template",
+          "description": "I need a tiny budget sheet with monthly totals.",
+          "requestedWeight": 2,
+          "committedWeight": 0,
+          "status": "draft",
+          "acceptedIntentId": null,
+          "createdAt": "2026-04-13T11:20:00.000Z"
+        }
+      ],
+      "resolutionIntents": [
+        {
+          "id": "intent-1",
+          "declarationId": "dec-2",
+          "resolverId": "user-2",
+          "note": "I can deliver a cleaner vector sketch tonight.",
+          "status": "proposed",
+          "createdAt": "2026-04-13T12:00:00.000Z"
+        }
+      ],
+      "acquisitionPlans": [
+        { "id": "plan-1", "userId": "user-1", "declarationId": "dec-2", "priority": 1, "mode": "series" },
+        { "id": "plan-2", "userId": "user-2", "declarationId": "dec-1", "priority": 1, "mode": "series" }
+      ],
+      "activityLog": [
+        {
+          "id": "log-1",
+          "type": "seed",
+          "messageKey": "logSeed",
+          "messageParams": null,
+          "createdAt": "2026-04-13T12:10:00.000Z"
+        }
+      ]
+    }
+  </script>
+  <script type="module" src="./app/main.js"></script>
+</body>
+</html>

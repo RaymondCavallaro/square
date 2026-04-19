@@ -1,0 +1,67 @@
+{
+  "currentUserId": "user-1",
+  "locale": "pt-BR",
+  "users": [
+    { "id": "user-1", "name": "Ari", "availableWeight": 12, "lockedWeight": 0, "reputation": 3 },
+    { "id": "user-2", "name": "Bea", "availableWeight": 8, "lockedWeight": 0, "reputation": 5 },
+    { "id": "user-3", "name": "Caio", "availableWeight": 10, "lockedWeight": 0, "reputation": 2 }
+  ],
+  "declarations": [
+    {
+      "id": "dec-1",
+      "ownerId": "user-2",
+      "title": "Landing page copy review",
+      "description": "Need a sharper headline and a cleaner first screen.",
+      "requestedWeight": 3,
+      "committedWeight": 3,
+      "status": "committed",
+      "acceptedIntentId": null,
+      "createdAt": "2026-04-13T11:00:00.000Z"
+    },
+    {
+      "id": "dec-2",
+      "ownerId": "user-1",
+      "title": "Logo sketch cleanup",
+      "description": "Turn rough shapes into a cleaner mark I can keep iterating on.",
+      "requestedWeight": 4,
+      "committedWeight": 4,
+      "status": "committed",
+      "acceptedIntentId": null,
+      "createdAt": "2026-04-13T11:10:00.000Z"
+    },
+    {
+      "id": "dec-3",
+      "ownerId": "user-3",
+      "title": "Simple spreadsheet template",
+      "description": "I need a tiny budget sheet with monthly totals.",
+      "requestedWeight": 2,
+      "committedWeight": 0,
+      "status": "draft",
+      "acceptedIntentId": null,
+      "createdAt": "2026-04-13T11:20:00.000Z"
+    }
+  ],
+  "resolutionIntents": [
+    {
+      "id": "intent-1",
+      "declarationId": "dec-2",
+      "resolverId": "user-2",
+      "note": "I can deliver a cleaner vector sketch tonight.",
+      "status": "proposed",
+      "createdAt": "2026-04-13T12:00:00.000Z"
+    }
+  ],
+  "acquisitionPlans": [
+    { "id": "plan-1", "userId": "user-1", "declarationId": "dec-2", "priority": 1, "mode": "series" },
+    { "id": "plan-2", "userId": "user-2", "declarationId": "dec-1", "priority": 1, "mode": "series" }
+  ],
+  "activityLog": [
+    {
+      "id": "log-1",
+      "type": "seed",
+      "messageKey": "logSeed",
+      "messageParams": null,
+      "createdAt": "2026-04-13T12:10:00.000Z"
+    }
+  ]
+}
