@@ -5,21 +5,37 @@
 
 # The Square
 
-Concept test for a small event-driven web system inspired by the social and economic ideas behind the webnovel backdrop [Taking Ground](https://www.wattpad.com/story/410067124-taking-ground).
+Early claim-based coordination prototype for a small event-driven web system inspired by the social and economic ideas behind the webnovel backdrop [Taking Ground](https://www.wattpad.com/story/410067124-taking-ground).
+
+This phase still uses the language of declarations, intents, and acquisition plans, but the repository now treats those pieces as the first reduced form of a system centered on claims, exposed weight, structured resolution, and progressive memory.
+
+The mini system keeps rules and interface separate. The system layer manages early claims, resolution proposals, exposed commitment, and an early memory trail. The UI only emits events and renders state.
 
 Made largely with AI.
 
 ## What This Is
 
-This repository is an open prototype for exploring a simple loop:
+This repository is an open prototype for exploring a simple coordination loop:
 
-- people declare what they want
-- they commit weight to show priority
-- other people choose declarations to resolve
+- people frame early claims through the current declaration model
+- they expose priority by committing weight
+- other people submit resolution proposals
 - completed work transfers weight back into the system
-- earned weight can help clear the resolver's own priorities
+- earned weight can help clear the resolver's own early claims
 
 It is intentionally small and browser-first.
+
+## Migration Vocabulary
+
+During Phase 1, the project uses the following bridge vocabulary:
+
+- declaration -> early claim
+- resolution intent -> resolution proposal
+- committed weight -> exposed commitment
+- activity log -> early memory trail
+
+This does not mean renaming everything at once.
+It means documenting the current implementation as a reduced, still-simplified version of the broader target model.
 
 ## Current Prototype
 
@@ -27,12 +43,25 @@ The current version is a plain browser app with:
 
 - separated GUI and system logic
 - event-driven communication through a small event bus
-- declarations
-- weight commitment
-- resolution intents
+- early claims represented as declarations
+- visible weight commitment
+- resolution proposals still modeled in code as intents
 - acquisition plan ordering
-- local activity log
+- local early memory trail
 - `localStorage` persistence
+
+## Phase Direction
+
+The goal of this phase is not to copy `tg` literally.
+
+The goal is to make it explicit that the current Square prototype is already moving toward:
+
+- claims as the main unit
+- visible commitment through weight
+- more structured resolution than a loose task board
+- memory that can later grow beyond a flat activity history
+
+The implementation is still earlier and smaller than that direction, but the repository now explains the intended framing clearly.
 
 ## Project Structure
 
@@ -47,7 +76,7 @@ The current version is a plain browser app with:
 
 This is a concept test, not a finished product.
 
-The goal right now is to keep the architecture easy to change while the concept becomes clearer.
+The goal right now is to keep the architecture easy to change while the claim-based concept becomes clearer.
 
 ## Notes
 

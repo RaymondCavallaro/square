@@ -1,5 +1,18 @@
 # **The Square**
 
+## **Current Prototype Framing**
+
+The current browser prototype should be read as an **early claim-based coordination system**.
+
+It still uses lighter terminology in parts of the code and UI, but Phase 1 treats the current model as a reduced bridge toward the fuller orientation:
+
+* declaration -> early claim
+* resolution intent -> resolution proposal
+* committed weight -> exposed commitment
+* activity log -> early memory trail
+
+This document therefore describes the direction the prototype is moving toward, while the running app still exposes only a simplified first slice of that shape.
+
 ## **Core Principle**
 
 The Square is a coordination system where:
@@ -71,7 +84,9 @@ Weight is not currency.
 
 ### **Definition**
 
-A declaration is a **committed need**, backed by locked weight.
+At the current prototype stage, a declaration is best understood as an **early claim**:
+
+> a committed need, backed by locked weight, but not yet carrying the full claim structure that later phases will add.
 
 ---
 
@@ -158,7 +173,7 @@ Resolution is the act of **fulfilling a declaration**.
 ### **Flow**
 
 1. Resolver selects a declaration
-2. Submits **resolution intent**
+2. Submits **resolution intent** (the current simplified form of a resolution proposal)
 3. Declaration becomes **soft-locked**
 4. Terms are **negotiated and refined**
 5. Work is performed
@@ -258,6 +273,26 @@ Rules can be attached to:
 * declarations
 * resolutions
 * conflicts
+
+---
+
+## **Prototype Boundary**
+
+The current repository does **not** yet implement the full claim structure described above.
+
+What it already has:
+
+* early claims through declarations
+* visible commitment through weight
+* lightweight proposal/acceptance flow
+* a first memory trail through activity history
+
+What later phases still need:
+
+* explicit context fields
+* evaluation surface structure
+* richer negotiation and outcomes
+* structured memory and claim relations
 
 Examples:
 

@@ -58,7 +58,8 @@ import * as propertiesFile from "https://esm.sh/properties-file@3.6.0";
   await loadAppConfig();
   await loadLibraries();
   await global.Square.ui.i18n.loadTranslations({
-    manifest: await loadJson(EXTERNAL_PATHS.i18nManifest)
+    manifest: await loadJson(EXTERNAL_PATHS.i18nManifest),
+    appConfig: appConfig
   });
   await initializeStore();
   const locale = global.Square.ui.i18n.getLocale(global.Square.system.store.getState());

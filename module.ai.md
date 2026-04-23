@@ -1,5 +1,8 @@
 # **System Summary (Module-Based)**
 
+This module summary describes the target orientation.
+The current `square` prototype only implements an earlier reduced slice of it, with declarations acting as early claims and activity history acting as an early memory trail.
+
 ## **1. Claim System (Core Unit)**
 
 * Reality is expressed as **claims**
