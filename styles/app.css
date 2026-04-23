@@ -3,7 +3,7 @@
   margin: 1rem auto 3rem;
 }
 
-.hero {
+.square {
   padding: 2rem;
   border-radius: 28px;
   background: rgba(255, 250, 243, 0.8);
@@ -13,7 +13,7 @@
   margin-bottom: 1rem;
 }
 
-.hero-top {
+.square-top {
   display: flex;
   justify-content: space-between;
   gap: 1rem;
@@ -39,12 +39,12 @@
   color: var(--muted);
 }
 
-.hero h1 {
+.square h1 {
   font-size: clamp(2rem, 5vw, 4rem);
   letter-spacing: 0.04em;
 }
 
-.hero p {
+.square p {
   max-width: 54rem;
   margin: 0.75rem 0 0;
   color: var(--muted);
@@ -195,7 +195,7 @@
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  .hero-top {
+  .square-top {
     flex-direction: column;
   }
 }

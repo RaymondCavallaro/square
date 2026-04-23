@@ -1,0 +1,22 @@
+{
+  "persistence": "localStorage",
+  "readme": {
+    "pt-BR": "./README.md",
+    "en-US": "./README.en.md"
+  },
+  "libraryPaths": {
+    "core": [
+      "./lib/core/namespace.js",
+      "./lib/core/json.js",
+      "./lib/core/event-bus.js"
+    ],
+    "app": [
+      "./lib/system/persistence/{persistence}/store.js",
+      "./lib/system/selectors.js",
+      "./lib/system/actions.js",
+      "./lib/ui/i18n.js",
+      "./lib/ui/render.js",
+      "./lib/ui/controllers.js"
+    ]
+  }
+}

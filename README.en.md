@@ -1,3 +1,8 @@
+# Language
+
+- Versão em Portugues : [README.md](README.md)
+- English version (this one)
+
 # The Square
 
 Concept test for a small event-driven web system inspired by the social and economic ideas behind the webnovel backdrop [Taking Ground](https://www.wattpad.com/story/410067124-taking-ground).

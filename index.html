@@ -9,22 +9,22 @@
 </head>
 <body>
   <div class="shell" id="app">
-    <section class="hero">
-      <div class="hero-top">
+    <section class="square">
+      <div class="square-top">
         <div>
-          <p class="eyebrow" data-i18n="heroEyebrow">The Square</p>
-          <h1 id="hero-title">Carregando conceito...</h1>
+          <h1 data-i18n="square">The Square</h1>
         </div>
         <div class="locale-switcher">
           <label for="locale-select" data-i18n="languageLabel">Idioma</label>
-          <select id="locale-select" data-action="select-locale">
-            <option value="pt-BR">pt-BR</option>
-            <option value="en-US">English (US)</option>
-          </select>
+          <select id="locale-select" data-action="select-locale"></select>
         </div>
       </div>
-      <p id="hero-summary">
+      <p id="square-summary">
+        Teste conceitual de um pequeno sistema web orientado a eventos, inspirado pelas ideias sociais e economicas por tras do pano de fundo da webnovel [Taking Ground](https://www.wattpad.com/story/410067124-taking-ground).
+
         Este mini sistema mantem regras e interface separadas. A camada de sistema gerencia declaracoes, intencoes, peso e planejamento. A interface apenas emite eventos e renderiza estado.
+
+        Feito em grande parte com IA.
       </p>
     </section>
 
@@ -94,87 +94,6 @@
       </div>
     </div>
   </div>
-  <script id="embedded-readme-meta" type="application/json">
-    {
-      "pt-BR": {
-        "title": "The Square",
-        "summary": "Teste conceitual de um pequeno sistema web orientado a eventos para declaracoes, resolucoes, peso e planejamento."
-      },
-      "en-US": {
-        "title": "The Square",
-        "summary": "Concept test for a small event-driven web system for declarations, resolutions, weight, and planning."
-      }
-    }
-  </script>
-  <script id="embedded-mock-state" type="application/json">
-    {
-      "currentUserId": "user-1",
-      "locale": "pt-BR",
-      "users": [
-        { "id": "user-1", "name": "Ari", "availableWeight": 12, "lockedWeight": 0, "reputation": 3 },
-        { "id": "user-2", "name": "Bea", "availableWeight": 8, "lockedWeight": 0, "reputation": 5 },
-        { "id": "user-3", "name": "Caio", "availableWeight": 10, "lockedWeight": 0, "reputation": 2 }
-      ],
-      "declarations": [
-        {
-          "id": "dec-1",
-          "ownerId": "user-2",
-          "title": "Landing page copy review",
-          "description": "Need a sharper headline and a cleaner first screen.",
-          "requestedWeight": 3,
-          "committedWeight": 3,
-          "status": "committed",
-          "acceptedIntentId": null,
-          "createdAt": "2026-04-13T11:00:00.000Z"
-        },
-        {
-          "id": "dec-2",
-          "ownerId": "user-1",
-          "title": "Logo sketch cleanup",
-          "description": "Turn rough shapes into a cleaner mark I can keep iterating on.",
-          "requestedWeight": 4,
-          "committedWeight": 4,
-          "status": "committed",
-          "acceptedIntentId": null,
-          "createdAt": "2026-04-13T11:10:00.000Z"
-        },
-        {
-          "id": "dec-3",
-          "ownerId": "user-3",
-          "title": "Simple spreadsheet template",
-          "description": "I need a tiny budget sheet with monthly totals.",
-          "requestedWeight": 2,
-          "committedWeight": 0,
-          "status": "draft",
-          "acceptedIntentId": null,
-          "createdAt": "2026-04-13T11:20:00.000Z"
-        }
-      ],
-      "resolutionIntents": [
-        {
-          "id": "intent-1",
-          "declarationId": "dec-2",
-          "resolverId": "user-2",
-          "note": "I can deliver a cleaner vector sketch tonight.",
-          "status": "proposed",
-          "createdAt": "2026-04-13T12:00:00.000Z"
-        }
-      ],
-      "acquisitionPlans": [
-        { "id": "plan-1", "userId": "user-1", "declarationId": "dec-2", "priority": 1, "mode": "series" },
-        { "id": "plan-2", "userId": "user-2", "declarationId": "dec-1", "priority": 1, "mode": "series" }
-      ],
-      "activityLog": [
-        {
-          "id": "log-1",
-          "type": "seed",
-          "messageKey": "logSeed",
-          "messageParams": null,
-          "createdAt": "2026-04-13T12:10:00.000Z"
-        }
-      ]
-    }
-  </script>
   <script type="module" src="./app/main.js"></script>
 </body>
 </html>

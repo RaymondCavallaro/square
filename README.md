@@ -1,12 +1,17 @@
-# The Square
+# Língua
 
-English version: [README.en.md](C:\dev\git\square\README.en.md)
+- Versão em Portugues (esta)
+- English version: [README.en.md](README.en.md)
+
+# The Square
 
 Teste conceitual de um pequeno sistema web orientado a eventos, inspirado pelas ideias sociais e economicas por tras do pano de fundo da webnovel [Taking Ground](https://www.wattpad.com/story/410067124-taking-ground).
 
+Este mini sistema mantem regras e interface separadas. A camada de sistema gerencia declaracoes, intencoes, peso e planejamento. A interface apenas emite eventos e renderiza estado.
+
 Feito em grande parte com IA.
 
-## O Que E
+## O que é
 
 Este repositorio e um prototipo aberto para explorar um ciclo simples:
 
@@ -18,7 +23,7 @@ Este repositorio e um prototipo aberto para explorar um ciclo simples:
 
 Ele e intencionalmente pequeno e browser-first.
 
-## Prototipo Atual
+## Prototipo atual
 
 A versao atual e um app de navegador simples com:
 
@@ -31,7 +36,7 @@ A versao atual e um app de navegador simples com:
 - log local de atividade
 - persistencia em `localStorage`
 
-## Estrutura Do Projeto
+## Estrutura do Projeto
 
 - `index.html` e a entrada da aplicacao no navegador
 - `styles/` contem os arquivos CSS
@@ -40,7 +45,7 @@ A versao atual e um app de navegador simples com:
 - `lib/ui/` contem renderizacao e controladores de DOM
 - `app/` contem a inicializacao da aplicacao
 
-## Estado Atual
+## Estado atual
 
 Isto e um teste conceitual, nao um produto finalizado.
 

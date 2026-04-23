@@ -11,3 +11,4 @@ This file defines project guidance for square project.
 
 - Keep committed project rules focused on project behavior.
 - Avoid storing purely personal agent preferences in this committed file.
+- use Semantic commit messages

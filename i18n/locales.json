@@ -1,0 +1,15 @@
+{
+  "locale.meta": {
+    "default": "pt-BR",
+    "pt-BR": {
+      "locale": "pt-BR",
+      "label": "Portugues (BR)",
+      "path": "./i18n/pt-BR.properties"
+    },
+    "en-US": {
+      "locale": "en-US",
+      "label": "English (US)",
+      "path": "./i18n/en-US.properties"
+    }
+  }
+}
