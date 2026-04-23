@@ -8,7 +8,8 @@
     "core": [
       "./lib/core/namespace.js",
       "./lib/core/json.js",
-      "./lib/core/event-bus.js"
+	  "./lib/core/event-bus.js",
+      "./lib/core/template.js"
     ],
     "app": [
       "./lib/system/persistence/{persistence}/store.js",
