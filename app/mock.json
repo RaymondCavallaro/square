@@ -12,6 +12,19 @@
       "ownerId": "user-2",
       "title": "Landing page copy review",
       "description": "Need a sharper headline and a cleaner first screen.",
+      "intent": {
+        "summary": "Landing page copy review",
+        "details": "Need a sharper headline and a cleaner first screen."
+      },
+      "context": {
+        "scope": "Homepage first screen and primary headline",
+        "notes": "Focus on clarity for first-time visitors before design polish."
+      },
+      "evaluation": {
+        "check": "A revised headline and opening copy are delivered with two viable alternatives.",
+        "confirmer": "Bea confirms the first screen is clearer and more specific.",
+        "evidence": "Updated copy draft or mockup notes."
+      },
       "requestedWeight": 3,
       "committedWeight": 3,
       "status": "committed",
@@ -23,6 +36,19 @@
       "ownerId": "user-1",
       "title": "Logo sketch cleanup",
       "description": "Turn rough shapes into a cleaner mark I can keep iterating on.",
+      "intent": {
+        "summary": "Logo sketch cleanup",
+        "details": "Turn rough shapes into a cleaner mark I can keep iterating on."
+      },
+      "context": {
+        "scope": "Current concept logo for the Square prototype",
+        "notes": "Keep the mark lightweight enough for further exploration instead of final branding."
+      },
+      "evaluation": {
+        "check": "A cleaned-up mark is delivered with visibly improved shape consistency.",
+        "confirmer": "Ari confirms the new sketch is usable for another iteration round.",
+        "evidence": "Image or vector draft of the refined mark."
+      },
       "requestedWeight": 4,
       "committedWeight": 4,
       "status": "committed",
@@ -34,9 +60,22 @@
       "ownerId": "user-3",
       "title": "Simple spreadsheet template",
       "description": "I need a tiny budget sheet with monthly totals.",
+      "intent": {
+        "summary": "Simple spreadsheet template",
+        "details": "I need a tiny budget sheet with monthly totals."
+      },
+      "context": {
+        "scope": "Personal monthly budget tracking",
+        "notes": "Should stay lightweight and easy to copy for future months."
+      },
+      "evaluation": {
+        "check": "Template includes monthly categories and an automatic total.",
+        "confirmer": "Caio can verify that the sheet is enough for regular monthly use.",
+        "evidence": "Spreadsheet file or a screenshot of the filled template."
+      },
       "requestedWeight": 2,
       "committedWeight": 0,
-      "status": "draft",
+      "status": "projected",
       "acceptedIntentId": null,
       "createdAt": "2026-04-13T11:20:00.000Z"
     }
