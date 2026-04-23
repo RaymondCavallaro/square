@@ -1,6 +1,6 @@
 import jsep from "https://cdn.jsdelivr.net/npm/jsep@1.4.0/+esm";
 import * as propertiesFile from "https://esm.sh/properties-file@3.6.0";
-import showdown from 'https://cdn.jsdelivr.net/npm/showdown@2.1.0/dist/showdown.min.js';
+import * as showdown from 'https://cdn.jsdelivr.net/npm/showdown@2.1.0/dist/showdown.min.js';
 
 (async function boot(global) {
   const EXTERNAL_PATHS = {
