@@ -13,6 +13,10 @@ O mini sistema mantem regras e interface separadas. A camada de sistema gerencia
 
 Feito em grande parte com IA.
 
+## Demo
+
+- GitHub Pages: [raymondcavallaro.github.io/square](https://raymondcavallaro.github.io/square/)
+
 ## O que é
 
 Este repositorio e um prototipo aberto para explorar um ciclo simples de coordenacao:

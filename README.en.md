@@ -13,6 +13,10 @@ The mini system keeps rules and interface separate. The system layer manages ear
 
 Made largely with AI.
 
+## Demo
+
+- GitHub Pages: [raymondcavallaro.github.io/square](https://raymondcavallaro.github.io/square/)
+
 ## What This Is
 
 This repository is an open prototype for exploring a simple coordination loop:
